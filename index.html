@@ -2,7 +2,6 @@
 <html lang="pt-bt">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="styles/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rede Social 2.0</title>
@@ -10,8 +9,8 @@
   <body>
     <main>
       <nav>
-        <button id="sign-in"><a href="#">Sign In</a></button>
-        <button id="log-in"><a href="#">Log In</a></button>
+        <button id="sign-in"><a href="pages/signin/sign-in.html" target="_self">Sign In</a></button>
+        <button id="log-in"><a href="pages/login/log-in.html" target="_self">Log In</a></button>
       </nav>
       <div class="logo-wrapper">
         <picture>
@@ -30,14 +29,12 @@
           <img width="180" src="images/logo.png" alt="Logo" />
         </picture>
       </div>
-      <h2>Junte-Se aos seus amigos na Rede Social</h2>
+      <h2>Junte-se aos seus amigos na Rede Social</h2>
     </main>
 
     <footer>
       <p>&COPY; VG Enterprise || Rede Social</p>
     </footer>
-
-    <!--<div id="app"></div>
-     <script type="module" src="/main.js"></script> -->
+     <script type="module" src="scripts/User.js"></script>
   </body>
 </html>
