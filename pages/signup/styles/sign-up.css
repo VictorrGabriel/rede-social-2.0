@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(errorMessage.css);
+
 @import url(../../../styles/variables.css);
 
 *{
@@ -61,6 +63,8 @@ div.wrapper{
     padding: 0 .8rem;
     margin-bottom: .5rem
     ;
+
+    position: relative;
 }
 
 div.wrapper > input{
@@ -68,7 +72,7 @@ div.wrapper > input{
     padding: 0.3rem;
     border: 1px solid #000;
     margin-top: .2rem;
-    transition: transform ease-in-out .1s;
+    transition: transform ease-in-out .3s;
 }
 
 div.wrapper > input:focus{
@@ -173,6 +177,8 @@ footer {
     text-align: center;
     font-size: .8em;
   }
+
+  
 
 
 

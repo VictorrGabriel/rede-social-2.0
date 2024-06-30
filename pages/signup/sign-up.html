@@ -3,40 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/sign-in.css" />
+    <link rel="stylesheet" href="styles/sign-up.css" />
     <title>Rede Social 2.0</title>
   </head>
   <body>
     <main>
       <h2>Crie sua conta</h2>
       <p class="subheading">Junte-se aos seus amigos!</p>
-      <form action="" autocomplete="on">
+      <form action="" autocomplete="on" id="form">
         <div class="wrapper">
           <div>
             <label for="user-name">Nome</label>
           </div>
-          <input type="text" name="name" id="user-name" autocomplete="name" placeholder="Insira o seu nome" />
+          <input type="text" name="name" id="user-name" autocomplete="name" placeholder="Insira o seu nome"  class="required-field"/>
+          <span class="error-message">
+            Este compo precisa ser preenchido !
+          </span>
         </div>
 
         <div class="wrapper">
           <div>
             <label for="user-email">Email</label>
           </div>
-          <input type="email" name="email" id="user-email" autocomplete="email" placeholder="usuario@gamil.com" />
+          <input type="email" name="email" id="user-email" autocomplete="email" placeholder="usuario@gamil.com"  class="required-field"/>
+          <span class="error-message">
+            Este compo precisa ser preenchido !
+          </span>
         </div>
 
         <div class="wrapper">
           <div>
             <label for="user-password">Senha</label>
           </div>
-          <input type="password" name="password" id="user-password" autocomplete="new-password" placeholder="Crie uma senha" />
+          <input type="password" name="password" id="user-password" autocomplete="new-password" placeholder="Crie uma senha"  class="required-field"/>
+          <span class="error-message">
+            Este compo precisa ser preenchido !
+          </span>
         </div>
 
         <div class="wrapper">
           <div>
-            <label for="user-name">Confirme sua senha</label>
+            <label for="confirm-password">Confirme sua senha</label>
           </div>
-          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme a senha criada"/>
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme a senha criada" class="required-field"/>
+          <span class="error-message">
+            Este compo precisa ser preenchido !
+          </span>
         </div>
 
         <button id="log-in">Conecte-se</button>
@@ -54,5 +66,6 @@
     <footer>
       <p>&COPY; VG Enterprise || Rede Social</p>
     </footer>
+   <script type="module" src="src/script.js"></script>
   </body>
 </html>

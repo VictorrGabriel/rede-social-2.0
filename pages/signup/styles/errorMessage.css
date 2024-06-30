@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+span.error-message{
+    background-color: var(--secondary-color);
+    display: none;
+    font-size: 0.7em;
+    border: 1px solid #000;
+    padding: 0.3rem;
+    color: #fff;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 110%;
+    left: 20%;
+    z-index: 1;
+
+  
+
+    animation: animationErrorMessage infinite ease .7s;
+  }
+
+  span.error-message::before{
+    background-color: var(--secondary-color);
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+
+
+    position: absolute;
+    top: -20%;
+    left: 45%;
+    transform: rotate(45deg);
+
+  }
+
+  @keyframes animationErrorMessage{
+    0%{
+        transform: translateY(1px);
+    } 
+
+    50%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-1px);
+    }
+
+  }
+
